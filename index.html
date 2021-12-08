@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema de afiliación digital de Republicanos Unidos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>  
+
+	<div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7 py-5">
+            <h3>Sistema de afiliación digital</h3>
+            <p class="mb-4">Te preparamos la ficha y nos pondremos en contacto para que puedas firmarla! </p>
+
+                 <!---------------- P U T   Y O U R   W E B - A P P   U R L   H E R E  --------------->    
+		    <div class="form">
+			    <form action="https://script.google.com/macros/s/AKfycbxA-hyIXhdijKwf6dcYW-pRWmjxbFdZTbw0-bun_Jul7HnlQ-gBrxwdenfMVoHedMm2Hg/exec" id="form" method="post">
+			        <div id="data"></div>
+			        <div id="data2"></div>
+			        <div class="row">
+		                <div class="col-md">
+		                    <div class="form-group ">
+		                        <label for="Nombres">Nombre(s)</label>
+			 					<input type="text" class="form-control alpha-field" name="nombres" placeholder="Nombre(s)" maxlength="50" required>
+			 				</div>
+			 			</div>
+                    	<div class="col-md">
+                        	<div class="form-group ">
+                           		<label for="Apellidos">Apellido(s)</label>
+			 					<input type="text" class="form-control alpha-field" name="apellidos" placeholder="Apellido(s)" maxlength="50" required>
+			 				</div>
+			 			</div>
+                    	<div class="col-md">
+                        	<div class="form-group ">
+                        		<label for="Dni">D.N.I:</label>
+			 					<input name="dni" class="form-control dni-field" type = "number" min = "1" max = "100000000" placeholder="11.111.111" required>
+			 				</div>
+			 			</div>
+			 		</div>
+                	<div class="row">
+                    	<div class="col-md">
+                        	<div class="form-group ">
+                            	<label for="FechaNacimiento">Fecha de nacimiento</label>
+			 					<input name="fechanacimiento" class="form-control date-field" type="date" placeholder="Fecha de nacimiento" required>
+			 				</div>
+			 			</div>
+	                    <div class="col-md">
+	                        <div class="form-group">
+	                            <label for="Sexo">Sexo</label>
+						 		<select class="form-control" name="sexo" placeholder="Sexo" required>
+						 			<option value="M">Masculino</option>
+						 			<option value="F">Femenino</option>
+						 		</select>
+						 	</div>
+						</div>
+	                    <div class="col-md">
+	                        <div class="form-group">
+	                            <label for="EstadoCivil">Estado civil</label>
+								<select class="form-control" name="estadocivil" placeholder="Estado civil" required>
+						 			<option value="soltero">Soltero(a)</option>
+						 			<option value="casado">Casado(a)</option>
+						 			<option value="divorciado">Divorciado(a)</option>
+						 			<option value="viudo">Viudo(a)</option>
+						 			<option value="no_informa">No informa</option>
+						 		</select>
+						 	</div>
+						</div>
+					</div>
+					<div class="row">
+                    	<div class="col-md">
+                        	<div class="form-group ">
+                            	<label for="Profesion">Profesión</label>
+			 					<input name="profesion" class="form-control alpha-field" placeholder="Profesión" required>
+			 				</div>
+			 			</div>
+	                    <div class="col-md">
+	                        <div class="form-group ">
+	                            <label for="Email">Correo electrónico</label>
+			 					<input name="mail" class="form-control" type="mail" placeholder="a@a.com" required>
+			 				</div>
+			 			</div>
+	                    <div class="col-md">
+	                        <div class="form-group ">
+	                            <label for="Celular">Número de celular</label>
+				 				<input type="text" pattern="\d*" class="form-control num-field" id="phone" placeholder = "1122223333" name="phone" maxlength="14">
+				 			</div>
+				 		</div>
+				 	</div>
+					<div class="row">
+                    	<div class="col">
+                        	<p class="highlight">
+	                            Por favor adjuntá una foto del frente de tu DNI y luego una del dorso.<br>
+	                            Es importante que el DNI quede dentro del recuadro y que todos los datos puedan leerse bien.<br>
+                        	</p>
+                    	</div>
+                	</div>
+
+
+                <div class="row">
+                    <div class="col-md ">
+                        <h3 class="center">Frente del DNI</h3>
+                        <div class="uploader frente">
+                            <label>
+                                <i class="fas fa-cloud-upload-alt"></i>                	
+			        			<input name="file" id="uploadfile" type="file" accept="image/*" required>
+			        		</label>
+			        	</div>
+			        </div>
+                    <div class="col-md ">
+                        <h3 class="center">Dorso del DNI</h3>
+                        <div class="uploader dorso">
+                            <label>
+                                <i class="fas fa-cloud-upload-alt"></i>
+			        			<input name="file2" id="uploadfile2" type="file" accept="image/*" required>      
+			        		</label>
+			        	</div>
+			        </div>
+			    </div>  
+                <div class="row">
+                    <div class="col-md">
+                        <p class="highlight">
+                            <button type="submit" class="btn btn-primary" id="formsubmit" ><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Enviar solicitud de afiliación</button>
+                        </p>
+                    </div>
+                </div>
+
+			    </form>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		var reader;
+		var reader2;
+
+
+		// on error
+		function errorHandler(evt) {
+			switch(evt.target.error.code) {
+			case evt.target.error.NOT_FOUND_ERR:
+				alert('File Not Found!');
+				break;
+			case evt.target.error.NOT_READABLE_ERR:
+				alert('File is not readable');
+				break;
+			case evt.target.error.ABORT_ERR:
+				break; // noop
+				default:
+				alert('An error occurred reading this file.');
+			};
+		}
+		
+		// close html-window: https://developers.google.com/apps-script/guides/html/communication
+		function closeMe() { google.script.host.close(); }
+
+		
+		// to forse click-event. The form with file-select will open automatically
+		function clickForse_() {
+			var element = document.getElementById("uploadfile");
+			element.click();   
+		}  
+
+		function clickForse2_() {
+			var element = document.getElementById("uploadfile2");
+			element.click();   
+		}  		
+		
+		// on file selected by user
+		function handleFileSelect(evt) {
+			reader = new FileReader();
+			// remember selected file (first selected)
+			var file = this.files[0];    
+			reader.fileName = file.name; // save name
+			reader.onerror = errorHandler;
+
+			reader.onabort = function(e) {
+				alert('File read cancelled');
+			};
+			reader.onloadstart = function(e) {
+				document.getElementById('progress_bar').className = 'loading';
+			};
+			reader.onload = function(e) {
+				// create data object
+				// form will send data via #data element
+				// https://gist.github.com/tanaikech/2f16f467c94612dc83920a3158614d95
+				html = '<input type="hidden" name="data" value="' + e.target.result.replace(/^.*,/, '') + '" >';
+				html += '<input type="hidden" name="mimetype" value="' + e.target.result.match(/^.*(?=;)/)[0] + '" >';
+				html += '<input type="hidden" name="filename" value="' + e.target.fileName + '" >';   
+				$("#data").empty().append(html);  
+
+				// The form will close automatically when load to Google Drive is finished
+				google.script.run.withSuccessHandler(closeMe).clientSideFunctionToProcessReturnedData();
+			}
+			// Read in the image file as a Data URL	
+			reader.readAsDataURL(file);
+		}
+
+
+		function handleFileSelect2(evt) {
+			reader2 = new FileReader();
+			// remember selected file (first selected)
+			var file2 = this.files[0];    
+			reader2.fileName = file2.name; // save name
+			reader2.onerror = errorHandler;
+
+			reader2.onabort = function(e) {
+				alert('File read cancelled');
+			};
+
+			reader2.onload = function(e) {
+				// create data object
+				// form will send data via #data element
+				// https://gist.github.com/tanaikech/2f16f467c94612dc83920a3158614d95
+				html = '<input type="hidden" name="data2" value="' + e.target.result.replace(/^.*,/, '') + '" >';
+				html += '<input type="hidden" name="mimetype2" value="' + e.target.result.match(/^.*(?=;)/)[0] + '" >';
+				html += '<input type="hidden" name="filename2" value="' + e.target.fileName + '" >';                
+				$("#data2").empty().append(html);  
+
+				// The form will close automatically when load to Google Drive is finished
+				google.script.run.withSuccessHandler(closeMe).clientSideFunctionToProcessReturnedData();
+			}
+			// Read in the image file as a Data URL	
+			reader2.readAsDataURL(file2);
+		}
+
+
+		// when user clicks button #uploadfile, add event handleFileSelect
+		document.getElementById('uploadfile').addEventListener('change', handleFileSelect, false);
+		document.getElementById('uploadfile2').addEventListener('change', handleFileSelect2, false);
+		// when document is loaded, add event 
+		document.addEventListener('DOMContentLoaded', clickForse_, false); // gives error
+		document.addEventListener('DOMContentLoaded', clickForse2_, false); // gives error
+    </script>
+</body>
+</html>
