@@ -147,3 +147,97 @@ h2 {
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #7e0cf5;
   opacity: .2; }
+
+.branding {
+	background-image: linear-gradient(to bottom right,#e1dce6,#661f7a);
+}
+
+.main {
+    
+}
+
+    .main:after {
+        content: "";
+        height: 191px;
+        background-image: linear-gradient(to left,#e1dce6,#661f7a);
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+
+.branding {
+    min-width: 212px;
+}
+
+.branding .card.logo .card-body {
+    padding: 0;
+}
+
+    .branding .card.logo .card-body .logo-container {
+        padding: 2.5rem;
+        background-image: linear-gradient(to bottom right,#e1dce6,#661f7a);
+    }
+
+.branding .card.logo .card-body .logo-container img {
+    display: block;
+    max-width: 100%;
+    padding: 4px;
+    border-radius: 6%;
+    margin: 0 auto;
+    background: #ffffffbb;
+    border: 1px solid #ffffff42;
+}
+
+.branding .card.logo .card-body .social {
+    padding: 30px;
+}
+
+.branding .card.logo .card-body .social ul {
+    margin: 0 0 0 35px;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.branding .card.logo .card-body .social ul li i {
+    width: 24px;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .branding .card.logo .card-body .social ul {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+.card {
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+.card-header:first-child {
+    border-radius: 7px 7px 0 0;
+}
+
+.card-header h2 {
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
